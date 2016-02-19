@@ -7,8 +7,8 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		// шаблон для регулярн выраж-ия по которому будет поиск
-		String number = "+375         29            2741017";
-		number.replace("[\\s]{2,}", " ");
+		String number = "+375 29-27fg41(017";
+		number = number.replaceAll("\\D","");
 		System.out.println(number);
 	Pattern pattern = Pattern.compile("375(17|25|29|33|44)\\d{7}$");
 	Matcher matcher = pattern.matcher(number);

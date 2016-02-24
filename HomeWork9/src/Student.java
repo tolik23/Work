@@ -1,19 +1,33 @@
-import java.util.Scanner;
+import java.util.Date;
 
 public class Student {
+	
+	private String SecondName;
+	private String name;
+	private Date age;
+	
+	
+	public String getSecondName() {
+		return SecondName;
+	}
+	public void setSecondName(String fam) {
+		this.SecondName = fam;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public Date getAge() {
+		return age;
+	}
+	public void setAge(Date age) {
+		this.age = age;
+	}
+	
+	
 
-    public static Student addStudent() {
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("¬ведите им€ студента.");
-        String firstName = scanner.nextLine();
-
-        System.out.println("¬ведите фамилию студента.");
-        String SecondName = scanner.nextLine();
-
-            System.out.println("¬ведите дату рождени€.");
-            String birthDate = scanner.nextLine();
-
-    }
 }

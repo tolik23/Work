@@ -19,3 +19,4 @@ public class Main {
 		return a/b;
 	}
 }
+

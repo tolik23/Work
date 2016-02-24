@@ -5,7 +5,6 @@ public class Button {
 	
 	public void setOnClickListener(OnButtonClickListener listener){
 		this.listener = listener;
-		
 	}
 	
 	//метод дл€ симул€ции клика на кнопку, в реальности его не будет

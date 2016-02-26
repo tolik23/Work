@@ -4,10 +4,9 @@ public class Calc {
 
 
 	public void menuCalc() throws MyException {
-		
 		String menuCalc = ("1 - Cложение a+b.\n2 - ¬ычетание а-b.\n3 - ”множение a*b.\n4 - ƒеление a/b.");
 		System.out.println(menuCalc);
-	
+	Numb temp = new Numb(0,0);
 		try {
 		switch (scan()) {
 		case 1:
@@ -37,10 +36,11 @@ public class Calc {
 //	    	double a = sc.nextDouble();
 //	    	System.out.println("¬ведите число b.");
 //	    	double b = sc.nextDouble();
-			
-			ab();
+	
+//			ab();
 	    	double c;
-		c = .getNumbA() + .getNumbB(); 
+	    	temp = ab();
+		c = ab().getNumbA() + ab().getNumbB(); 
 		System.out.println(c);
 			
 		}
@@ -52,9 +52,9 @@ public class Calc {
 //	    	System.out.println("¬ведите число b.");
 //	    	double b = sc.nextDouble();
 	    	
-	    	ab();
+//	    	ab();
 	    	double c;
-		c = .getNumbA() - .getNumbB();  
+		c = ab().getNumbA() - ab().getNumbB();  
 		System.out.println(c);
 		}
 		
@@ -65,9 +65,9 @@ public class Calc {
 //	    	System.out.println("¬ведите число b.");
 //	    	double b = sc.nextDouble();
 	    	
-	    	ab();
+//	    	ab();
 	    	double c;
-		c = .getNumbA() * .getNumbB();  
+		c = ab().getNumbA() * ab().getNumbB();  
 		System.out.println(c);	
 		}
 		
@@ -78,32 +78,32 @@ public class Calc {
 //	    	System.out.println("¬ведите число b.");
 //	    	double b = sc.nextDouble();
 	    	try {
-	    	ab();
+//	    	ab();
 	    	double c;
-		c = ab().newNumb.getNumbA() / ab().newNumb.getNumbB();  
+		c = ab().getNumbA() / ab().getNumbB();  
 		System.out.println(c);	
 	    	} catch(ArithmeticException e) {
 				System.out.println("ƒеление на ноль");
 			}
 		}
 	
-    public void ab() {
-//    	Scanner sc = new Scanner(System.in);
-//    	System.out.println("¬ведите число a.");
-//    	int a = sc.nextInt();
-//    	System.out.println("¬ведите число b.");
-//    	int b = sc.nextInt();
+    public Numb ab() {
+    	Scanner sc = new Scanner(System.in);
+    	System.out.println("¬ведите число a.");
+    	double a = sc.nextDouble();
+    	System.out.println("¬ведите число b.");
+    	double b = sc.nextDouble();
     	
-    	Numb newNumb = new Numb();
-
-		Scanner sc = new Scanner(System.in);
-
-		System.out.println("¬ведите число a.");
-		newNumb.setNumbA(sc.nextDouble());
-
-		System.out.println("¬ведите число b.");
-		newNumb.setNumbB(sc.nextDouble());
-   
+    	Numb newNumb = new Numb(a,b);
+        return newNumb;
+//		Scanner sc = new Scanner(System.in);
+//
+//		System.out.println("¬ведите число a.");
+//		newNumb.setNumb-A(sc.nextDouble());
+//
+//		System.out.println("¬ведите число b.");
+//		newNumb.setNumbB(sc.nextDouble());
+//   
     }
 	
 	

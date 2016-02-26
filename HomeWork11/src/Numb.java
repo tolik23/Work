@@ -1,6 +1,10 @@
 
 public class Numb {
 
+	public Numb(double a,double b) {
+		this.numbA = a;
+		this.numbB = b;
+	}
 	private double numbA;
 	private double numbB;
 	

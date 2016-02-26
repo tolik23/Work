@@ -6,7 +6,7 @@ public class Calc {
 	public void menuCalc() throws MyException {
 		String menuCalc = ("1 - Cложение a+b.\n2 - ¬ычетание а-b.\n3 - ”множение a*b.\n4 - ƒеление a/b.");
 		System.out.println(menuCalc);
-	Numb temp = new Numb(0,0);
+		
 		try {
 		switch (scan()) {
 		case 1:
@@ -30,57 +30,37 @@ public class Calc {
 		}
 	}
 	
-		private void summ() {
-//	    	Scanner sc = new Scanner(System.in);
-//	    	System.out.println("¬ведите число a.");
-//	    	double a = sc.nextDouble();
-//	    	System.out.println("¬ведите число b.");
-//	    	double b = sc.nextDouble();
-	
-//			ab();
+	private void summ() {
+			Numb temp = new Numb(0,0);
+			temp=ab();
 	    	double c;
-	    	temp = ab();
-		c = ab().getNumbA() + ab().getNumbB(); 
+		c = temp.getNumbA() + temp.getNumbB(); 
 		System.out.println(c);
 			
 		}
 		
 		private void vychet() {
-//			Scanner sc = new Scanner(System.in);
-//	    	System.out.println("¬ведите число a.");
-//	    	double a = sc.nextDouble();
-//	    	System.out.println("¬ведите число b.");
-//	    	double b = sc.nextDouble();
-	    	
-//	    	ab();
+			Numb temp = new Numb(0,0);
+			temp=ab();
 	    	double c;
-		c = ab().getNumbA() - ab().getNumbB();  
+		c = temp.getNumbA() - temp.getNumbB();  
 		System.out.println(c);
 		}
 		
 		private void umnoj() {
-//			Scanner sc = new Scanner(System.in);
-//	    	System.out.println("¬ведите число a.");
-//	    	double a = sc.nextDouble();
-//	    	System.out.println("¬ведите число b.");
-//	    	double b = sc.nextDouble();
-	    	
-//	    	ab();
+			Numb temp = new Numb(0,0);
+			temp=ab();
 	    	double c;
-		c = ab().getNumbA() * ab().getNumbB();  
+		c = temp.getNumbA() * temp.getNumbB();  
 		System.out.println(c);	
 		}
 		
 		private void delen() throws MyException{
-//			Scanner sc = new Scanner(System.in);
-//	    	System.out.println("¬ведите число a.");
-//	    	double a = sc.nextDouble();
-//	    	System.out.println("¬ведите число b.");
-//	    	double b = sc.nextDouble();
 	    	try {
-//	    	ab();
+	    		Numb temp = new Numb(0,0);
+				temp=ab();
 	    	double c;
-		c = ab().getNumbA() / ab().getNumbB();  
+		c = temp.getNumbA() / temp.getNumbB();  
 		System.out.println(c);	
 	    	} catch(ArithmeticException e) {
 				System.out.println("ƒеление на ноль");
@@ -96,14 +76,6 @@ public class Calc {
     	
     	Numb newNumb = new Numb(a,b);
         return newNumb;
-//		Scanner sc = new Scanner(System.in);
-//
-//		System.out.println("¬ведите число a.");
-//		newNumb.setNumb-A(sc.nextDouble());
-//
-//		System.out.println("¬ведите число b.");
-//		newNumb.setNumbB(sc.nextDouble());
-//   
     }
 	
 	

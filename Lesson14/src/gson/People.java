@@ -8,7 +8,7 @@ public class People {
 	private long id;
 	private boolean isDegree;
 	
-	//@SerializedName("name_one")  переопределили имя
+	@SerializedName("name_one") //переопределили имя
 	private String name;
 	
 	private String surname;

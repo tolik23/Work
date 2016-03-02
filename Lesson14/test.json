@@ -3,42 +3,42 @@
   "people": [
       {
         "id": 0,
-        "name": "Ivan",
+        "name_one": "Ivan",
         "surname": "Ivanov",
         "age": 12,
         "isDegree": true
       },
       {
         "id": 1,
-        "name": "Sergei",
+        "name_one": "Sergei",
         "surname": "Petrov",
         "age": 20,
         "isDegree": false
       },
 	  {
         "id": 2,
-        "name": "Alexei",
+        "name_one": "Alexei",
         "surname": "Sidorov",
         "age": 42,
         "isDegree": true
       },
       {
         "id": 3,
-        "name": "Michael",
+        "name_one": "Michael",
         "surname": "Jackson",
         "age": 34,
         "isDegree": true
       },
       {
         "id": 4,
-        "name": "Alex",
+        "name_one": "Alex",
         "surname": "Lukushenko",
         "age": 235,
         "isDegree": true
       },
       {
         "id": 5,
-        "name": "Maksim",
+        "name_one": "Maksim",
         "surname": "Hsdfkj",
         "age": 21,
         "isDegree": true

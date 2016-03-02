@@ -1,19 +1,21 @@
 package gson;
 
+import java.util.List;
+
 public class Root {
 
 	private String name;
-	private String people;
+	private List<People> people;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getPeople() {
+	public List<People> getPeople() {
 		return people;
 	}
-	public void setPeople(String people) {
+	public void setPeople(List<People> people) {
 		this.people = people;
 	}
 	@Override

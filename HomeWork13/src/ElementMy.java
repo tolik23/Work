@@ -6,6 +6,7 @@ public class ElementMy {
 	private boolean isDegree;
 	private String name;
 	private String surname;
+	
 	public int getAge() {
 		return age;
 	}
@@ -74,10 +75,11 @@ public class ElementMy {
 			return false;
 		return true;
 	}
+	@Override
+	public String toString() {
+		return "ElementMy [age=" + age + ", id=" + id + ", isDegree="
+				+ isDegree + ", name=" + name + ", surname=" + surname + "]";
+	}
 	
-//	@Override
-//	public String toString() {
-//		return "Element [age=" + age + ", id=" + id + ", isDegree=" + isDegree + ", name=" + name + ", surname="
-//				+ surname + "]";
-//	}
+	
 }

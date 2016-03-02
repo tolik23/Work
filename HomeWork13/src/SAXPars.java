@@ -7,11 +7,11 @@ import org.xml.sax.helpers.DefaultHandler;
 public class SAXPars extends DefaultHandler {
 	
 	String thisElement = "";
-	ElementMy elementMy;
+    ElementMy elementMy = new ElementMy();
 	
-	private ArrayList<ElementMy> list = new ArrayList<>();
+	public static ArrayList<ElementMy> list = new ArrayList<>();
 	
-	public ArrayList<ElementMy> getListElementMy() {
+	public  ArrayList<ElementMy> getListElementMy() {
 		
 		return list;
 	}

@@ -23,41 +23,31 @@ import org.xml.sax.SAXException;
 
 public class Main {
 
-	public static void main(String[] args) {
-		
-
-		SAXParserFactory factory = SAXParserFactory.newInstance();
+	public static void main(String[] args) throws ParserConfigurationException, SAXException {
+SAXParserFactory factory = SAXParserFactory.newInstance();
 		
 		SAXParser parser = null;
-		
-		
+	
 		try {
-			
 			parser = factory.newSAXParser();
 			
 		} catch (ParserConfigurationException | SAXException e) {
-		
 			e.printStackTrace();
 		} 
 		
-		SAXPars parser1 = null; 
+		SAXPars saxp = null; 
 		 
 		try {
-			
-			parser1 = new SAXPars();
-			
-			parser.parse(new File("test.xml"), parser1);
+			saxp = new SAXPars();
+			parser.parse(new File("test.xml"), saxp);
 			
 		} catch (SAXException | IOException e) {
-			
 			e.printStackTrace();
 		}
 		
-		List<ElementMy> list = new ArrayList<>(parser1.getListElementMy());
-		
-		for(ElementMy el: list) {
-			
-			System.out.println(list);
+		List<ElementMy> list = new ArrayList<>(saxp.getListElementMy());
+		for(ElementMy elem: list) {	
+			System.out.println(elem.toString());
 		}
 		
 	}

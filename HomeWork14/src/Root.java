@@ -4,7 +4,7 @@ public class Root {
 
 	private String name;
 	private String location;
-	private String emails;
+	private List<String> emails;
 	private List<Goods> goods;
 	public String getName() {
 		return name;
@@ -18,10 +18,10 @@ public class Root {
 	public void setLocation(String location) {
 		this.location = location;
 	}
-	public String getEmails() {
+	public List<String> getEmails() {
 		return emails;
 	}
-	public void setEmails(String emails) {
+	public void setEmails(List<String> emails) {
 		this.emails = emails;
 	}
 	public List<Goods> getGoods() {

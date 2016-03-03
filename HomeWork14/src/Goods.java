@@ -1,7 +1,6 @@
 
 public class Goods {
 
-	
 	private int id;
 	private String name;
 	private String sort;
@@ -9,6 +8,7 @@ public class Goods {
 	private String year;
 	private int price;
 	private boolean visible;
+	
 	public int getId() {
 		return id;
 	}

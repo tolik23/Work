@@ -32,8 +32,10 @@ public class Root {
 	}
 	@Override
 	public String toString() {
-		return "Root [name=" + name + ", location=" + location + ", emails=" + emails + "]";
+		return "Root [name=" + name + ", location=" + location + ", emails=" + emails + ", goods=" + goods + "]";
 	}
+
+	
 	
 	
 }

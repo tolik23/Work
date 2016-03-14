@@ -5,6 +5,13 @@ public class User {
 	
 	private String mName;
 	private String mSurname;
+	
+//	public static User getUser(){              ////// фабричный метод
+//		return new User("fghgjg","dffghgf");
+//	}
+	
+	
+	
 	public User(String mName, String mSurname) {
 		super();
 		this.mName = mName;

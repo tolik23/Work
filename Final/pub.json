@@ -1,0 +1,74 @@
+{
+  "name": "Super pub",
+  "location": "Minsk",        
+  "emails": [
+    	"sgasdg@gmail.com",
+     	"aaaaasfs@gmail.com",
+     	"bbbesfwef@gmail.com"
+   ],
+  "goods": [
+      {
+        "id": 0,
+        "name": "Erdinger",
+        "country": "DE",
+        "sort": "light",
+        "year": "2004-10-25",
+        "price": 45,
+        "visible": true
+      },
+      {
+        "id": 1,
+        "name": "Baltika",
+        "country": "RU",
+        "sort": "light",
+        "year": "2010-10-25",
+        "price": 25,
+        "visible": true
+      },
+      {
+        "id": 2,
+        "name": "Alivaria",
+        "country": "BY",
+        "sort": "light",
+        "year": "2012-10-25",
+        "price": 20,
+        "visible": true
+      },
+      {
+        "id": 3,
+        "name": "Kozel",
+        "country": "CZ",
+        "sort": "dark",
+        "year": "2015-10-25",
+        "price": 45,
+        "visible": true
+      },
+      {
+        "id": 4,
+        "name": "Krusovice",
+        "country": "CZ",
+        "sort": "dark",
+        "year": "2015-10-25",
+        "price": 40,
+        "visible": true
+      },
+      {
+        "id": 5,
+        "name": "Paulaner",
+        "country": "DE",
+        "sort": "light",
+        "year": "2015-10-25",
+        "price": 40,
+        "visible": true
+      },
+      {
+        "id": 6,
+        "name": "Lidskoe",
+        "country": "BY",
+        "sort": "dark",
+        "year": "2007-10-25",
+        "price": 20,
+        "visible": true
+      }
+    ]
+}

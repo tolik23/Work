@@ -3,8 +3,8 @@ public class Goods {
 
 	private int id;
 	private String name;
-	private String sort;
 	private String country;
+	private String sort;
 	private String year;
 	private int price;
 	private boolean visible;
@@ -21,17 +21,17 @@ public class Goods {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getSort() {
-		return sort;
-	}
-	public void setSort(String sort) {
-		this.sort = sort;
-	}
 	public String getCountry() {
 		return country;
 	}
 	public void setCountry(String country) {
 		this.country = country;
+	}
+	public String getSort() {
+		return sort;
+	}
+	public void setSort(String sort) {
+		this.sort = sort;
 	}
 	public String getYear() {
 		return year;
@@ -107,7 +107,7 @@ public class Goods {
 	
 	@Override
 	public String toString() {
-		return "Goods [id=" + id + ", name=" + name + ", sort=" + sort + ", country=" + country + ", year=" + year
+		return "Goods [id=" + id + ", name=" + name + ", country=" + country + ", sort=" + sort + ", year=" + year
 				+ ", price=" + price + ", visible=" + visible + "]";
 	}
 	

@@ -7,14 +7,17 @@ public class Menu {
 	public void mainMenu() {
 
 		while (true) {
-			String mainMenu = "1 - Загрузить файл xml.\n2 - Загрузить файл json.\n0 - выход. ";
+			String mainMenu = "1 - Загрузить файл xml.\n2 - Загрузить файл json, использовать парсер .\n0 - выход. ";
 			System.out.println(mainMenu);
 			switch (scanKay()) {
 			case 1:
 				fileXml();
 				break;
 			case 2:
-				fileJson();
+				fileJsonGson();
+				break;
+			case 3:
+				fileJsonJexon();
 				break;
 			case 0:
 				return;

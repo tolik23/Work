@@ -1,5 +1,8 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.util.jar.Attributes;
+
+import org.xml.sax.SAXException;
 
 import com.google.gson.Gson;
 
@@ -8,7 +11,7 @@ public class ParserGSON implements IParser {
 	public Root parse() {
 		Root root = null;
 		try {
-			BufferedReader reader = new BufferedReader(new FileReader("test.json"));
+			BufferedReader reader = new BufferedReader(new FileReader("pub.json"));
 			Gson gson = new Gson();
 
 			// конвертируем json в root
@@ -20,4 +23,6 @@ public class ParserGSON implements IParser {
 		return root;
 
 	}
+
+
 }

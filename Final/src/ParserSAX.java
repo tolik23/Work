@@ -19,17 +19,17 @@ public class ParserSAX extends DefaultHandler implements IParser {
 		this.root = new Root();
 	}
 	
-	@Override 
+
 	public void startElement(String namespaceURI, String localName, String qName, Attributes atts) throws SAXException { 
 		thisElement = qName;
 	} 
 	 
-	@Override 
+
 	public void endElement(String namespaceURI, String localName, String qName) throws SAXException { 
 		thisElement = "";
 	}
 	
-	@Override 
+
 	public void characters(char[] ch, int start, int length) throws SAXException {
 		
 		if(thisElement.equals("name") && goods == null) {
@@ -93,18 +93,18 @@ public class ParserSAX extends DefaultHandler implements IParser {
 			
 	} 
 
-	@Override
-	public Root parse() {
-	
-		SAXParserFactory factory = SAXParserFactory.newInstance();
-		
-		SAXParser parser = factory.newSAXParser();
-		
-		ParserSAX parserSAX = new ParserSAX();
-		
-		parser.parse(new File(filePath), parserSAX);
-		
-		return parserSAX.root;
-	}
+	//@Override
+//	public Root parse() {
+//	
+//		SAXParserFactory factory = SAXParserFactory.newInstance();
+//		
+//		SAXParser parser = factory.newSAXParser();
+//		
+//		ParserSAX parserSAX = new ParserSAX();
+//		
+//		parser.parse(new File(filePath), parserSAX);
+//		
+//		return parserSAX.root;
+//	}
 
 }

@@ -23,11 +23,8 @@ public class Main {
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		// TODO Auto-generated method stub
 
-		Root root = new Root();
-		
-		System.out.println(root.toString());
-//		Pub pub = new Pub();
-//		pub.mainMenu();
+		Pub pub = new Pub();
+		pub.mainMenu();
 
 	}
 

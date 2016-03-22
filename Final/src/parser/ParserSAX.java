@@ -1,6 +1,8 @@
 package parser;
 
 
+import java.io.File;
+import java.io.IOException;
 import java.util.List;
 import java.util.jar.Attributes;
 
@@ -118,6 +120,7 @@ public class ParserSAX extends DefaultHandler implements IParser {
 		}
 		
 		ParserSAX parserSAX = new ParserSAX();
+		
 		return parserSAX.root;
 	}
 

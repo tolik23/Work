@@ -1,3 +1,4 @@
+package multithread;
 
 public class CreatFile {
 

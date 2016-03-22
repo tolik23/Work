@@ -1,3 +1,4 @@
+package data;
 
 public class Goods {
 
@@ -107,8 +108,8 @@ public class Goods {
 	
 	@Override
 	public String toString() {
-		return "Goods [id=" + id + ", name=" + name + ", country=" + country + ", sort=" + sort + ", year=" + year
-				+ ", price=" + price + ", visible=" + visible + "]";
+		return "\nid=" + id + ", name=" + name + ", country=" + country + ", sort=" + sort + ", year=" + year
+				+ ", price=" + price + ", visible=" + visible;
 	}
 	
 	

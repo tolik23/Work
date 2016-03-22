@@ -1,13 +1,19 @@
+package parser;
 
 
 import java.util.List;
 import java.util.jar.Attributes;
 
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
+
+import data.Goods;
+import data.Root;
+
 
 public class ParserSAX extends DefaultHandler implements IParser {
 	
@@ -25,9 +31,7 @@ public class ParserSAX extends DefaultHandler implements IParser {
 	} 
 	 
 
-	public void endElement(String namespaceURI, String localName, String qName) throws SAXException { 
-		thisElement = "";
-	}
+	
 	
 
 	public void characters(char[] ch, int start, int length) throws SAXException {
@@ -93,18 +97,28 @@ public class ParserSAX extends DefaultHandler implements IParser {
 			
 	} 
 
-	//@Override
-//	public Root parse() {
-//	
-//		SAXParserFactory factory = SAXParserFactory.newInstance();
-//		
-//		SAXParser parser = factory.newSAXParser();
-//		
-//		ParserSAX parserSAX = new ParserSAX();
-//		
-//		parser.parse(new File(filePath), parserSAX);
-//		
-//		return parserSAX.root;
-//	}
+	public void endElement(String namespaceURI, String localName, String qName) throws SAXException { 
+		thisElement = "";
+	}
+	
+	
+	@Override
+	public Root parse() {
+	
+		SAXParserFactory factory = SAXParserFactory.newInstance();
+		
+		try {
+			SAXParser parser = factory.newSAXParser();
+		} catch (ParserConfigurationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SAXException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		ParserSAX parserSAX = new ParserSAX();
+		return parserSAX.root;
+	}
 
 }

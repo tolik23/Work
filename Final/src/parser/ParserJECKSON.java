@@ -1,3 +1,4 @@
+package parser;
 import java.io.File;
 import java.util.jar.Attributes;
 
@@ -5,8 +6,20 @@ import org.xml.sax.SAXException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ParserJEXON implements IParser {
+import data.Root;
 
+public class ParserJECKSON implements IParser {
+	
+	// сиглтон
+		private ParserJECKSON() {
+		}
+		private static class ParserJecksonSingl{
+			private final static ParserJECKSON instance = new ParserJECKSON();
+		}
+		public static ParserJECKSON getInstance() {
+			return ParserJecksonSingl.instance;
+		}
+	
 	public Root parse() {
 		Root root = null;
 		

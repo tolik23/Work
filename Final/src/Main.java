@@ -14,23 +14,21 @@ import org.xml.sax.SAXException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 
+import data.Root;
+import parser.ParserSAX;
+
 
 public class Main {
 
 	public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException {
 		// TODO Auto-generated method stub
-		SAXParserFactory factory = SAXParserFactory.newInstance(); 
-		SAXParser parser = factory.newSAXParser(); 
-		ParserSAX saxp = new ParserSAX(); 
-		 
-		parser.parse(new File("pub.xml"), saxp);
+
+		Root root = new Root();
 		
-		
-		Root root;
 		System.out.println(root.toString());
-		
-//		Menu menu = new Menu();
-//		menu.mainMenu();
+//		Pub pub = new Pub();
+//		pub.mainMenu();
+
 	}
 
 }
